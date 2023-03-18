@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="index.css">
+        <title>New Tab</title>
+    </head>
+    <body>
+        <main class="vignette">    
+            <div class="top">
+                <div class="grid-container">
+                    <div id="bookmarks" class="grid">
+                    </div>
+                </div>
+
+                <div class="top-right">
+
+                    <!-- weather widget -->
+                    <div id="weather" class="weather"></div>
+                    <h1 id="time" class="time"></h1>
+
+                </div>
+            </div>
+            <div class="bottom">
+                <!-- todo list -->
+                <div class="todo-container">
+                    <form id="todo-form" class="todo-form">
+                        <input class="todo-input" type="text" placeholder="Add item..." id="todo-input" autocomplete="off">
+                        <button class="submit-btn" type="submit">+</button>
+                    </form>
+                    <ul class="list" id="todo-list"></ul>
+                </div>
+            </div>
+            <h4 id="author"></h4>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
